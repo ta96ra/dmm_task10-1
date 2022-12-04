@@ -4,6 +4,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     @user = @book.user
     @nilbook = Book.new   #部分テンプレートファイルのためのインスタンス変数
+    @book_comment = BookComment.new  #新規コメント
   end
 
   def index
