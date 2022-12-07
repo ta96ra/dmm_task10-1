@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     @users = User.all
     @user = User.find(current_user.id)   # 部分テンプレートファイルのためのインスタンス変数
     @book = Book.new
+    @books = Book.looks(params[:search], params[:word])    # 部分テンプレートファイルのためのインスタンス変数
   end  
 
   def edit

@@ -12,6 +12,9 @@
     <%= render 'layouts/header' %>
       <main>
         <p id="notice"><%= notice %></p>
+        
+        <%= render 'layouts/search',{range:@range,users:@users,books:@books} %>
+        
         <%= yield %>
       </main>
     <%= render 'layouts/footer' %>
