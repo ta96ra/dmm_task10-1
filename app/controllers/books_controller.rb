@@ -5,6 +5,7 @@ class BooksController < ApplicationController
     @user = @book.user
     @nilbook = Book.new   #部分テンプレートファイルのためのインスタンス変数
     @book_comment = BookComment.new  #新規コメント
+    @book_comment = BookComment.new
   end
 
   def index
